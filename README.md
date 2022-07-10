@@ -1,3 +1,21 @@
+## 🚩 Info
+This package is a copy of the original [TUI Image Editor](https://github.com/nhn/tui.image-editor). Transformed to the unit of measure "cm" and with new changes:
+- Font selector in the texts. So far there are only the following sources:
+  - Arial
+  - Courier New
+  - Garamond
+  - Georgia
+  - Helvetica
+  - Impact
+  - Lucida Console
+  - Noto Sans
+  - Times New Roman
+  - Tahoma
+  - Times New Roman
+  - Trebuchet MS
+  - Verdana
+- M/U is "cm"
+
 # ![Toast UI ImageEditor](https://user-images.githubusercontent.com/35218826/40895380-0b9f4cd6-67ea-11e8-982f-18121daa3a04.png)
 
 > Full featured image editor using HTML5 Canvas. It's easy to use and provides powerful filters.
@@ -11,11 +29,11 @@
 
 ## 📦 Packages
 
-- [toast-ui.image-editor](https://github.com/nhn/tui.image-editor/tree/master/apps/image-editor
+- [toast-ui.image-editor](https://github.com/llorcasantana/Toast-Ui-Remastered/tree/master/apps/image-editor
 ) - Plain JavaScript component implemented by [NHN Cloud](https://github.com/nhn).
-- [toast-ui.vue-image-editor](https://github.com/nhn/tui.image-editor/tree/master/apps/vue-image-editor
+- [toast-ui.vue-image-editor](https://github.com/llorcasantana/Toast-Ui-Remastered/tree/master/apps/react-image-editor
 ) - **Vue** wrapper component is powered by [NHN Cloud](https://github.com/nhn).
-- [toast-ui.react-image-editor](https://github.com/nhn/tui.image-editor/tree/master/apps/react-image-editor
+- [toast-ui.react-image-editor](https://github.com/llorcasantana/Toast-Ui-Remastered/tree/master/apps/vue-image-editor
 ) - **React** wrapper component is powered by [NHN Cloud](https://github.com/nhn).
 
 ![6 -20-2018 17-45-54](https://user-images.githubusercontent.com/35218826/41647896-7b218ae0-74b2-11e8-90db-d7805cc23e8c.gif)
