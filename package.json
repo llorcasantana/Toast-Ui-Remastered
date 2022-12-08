@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",
@@ -51,8 +51,5 @@
     "build:image-editor": "lerna run --scope tui-image-editor build",
     "build:react": "lerna run --scope @toast-ui/react-image-editor build",
     "build:vue": "lerna run --scope @toast-ui/vue-image-editor build"
-  },
-  "workspaces": [
-    "apps/*"
-  ]
+  }
 }
