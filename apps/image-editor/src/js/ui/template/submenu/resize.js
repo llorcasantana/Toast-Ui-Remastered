@@ -21,7 +21,7 @@ export default ({ locale, makeSvgIcon }) => `
         <li class="tui-image-editor-partition only-left-right">
             <div></div>
         </li>
-        <li class="tui-image-editor-submenu-align">
+        <li class="tui-image-editor-submenu-align" style="display: none">
             <div class="tui-image-editor-checkbox-wrap">
                 <div class="tui-image-editor-checkbox">
                     <label>

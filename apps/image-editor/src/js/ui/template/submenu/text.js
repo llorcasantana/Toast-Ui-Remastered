@@ -58,6 +58,25 @@ export default ({ locale, makeSvgIcon }) => `
         <li class="tui-image-editor-partition only-left-right">
             <div></div>
         </li>
+        <li class="tui-image-editor-partition tui-image-editor-newline"></li>
+        <li class="tui-image-editor-newline tui-image-editor-range-wrap" style="margin-top: 10px; margin-left: -20px">
+            <label class="tie-text-color">${locale.localize('Font family')}</label>
+            <select id="selecth1FontFamily" name="selectFontFamily" class="tie-text-font-family tui-image-editor-range">
+              <option> Arial </option>   
+              <option> Courier New </option>                         
+              <option> Garamond </option>                         
+              <option> Georgia </option>                         
+              <option> Helvetica </option>                         
+              <option> Impact </option>                         
+              <option> Lucida Console </option>                         
+              <option> Noto Sans </option>                         
+              <option> Times New Roman </option>                                
+              <option> Tahoma </option>                                    
+              <option> Times New Roman </option>                                    
+              <option> Trebuchet MS </option>                                    
+              <option> Verdana </option>                                    
+            </select>
+        </li>
         <li class="tui-image-editor-newline tui-image-editor-range-wrap">
             <label class="range">${locale.localize('Text size')}</label>
             <div class="tie-text-range"></div>
