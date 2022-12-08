@@ -239,7 +239,11 @@ class Range {
     clearTimeout(this._userInputTimer);
 
     const { keyCode } = event;
-    if (keyCode < keyCodes.DIGIT_0 || keyCode > keyCodes.DIGIT_9) {
+    console.log(keyCode);
+    if (
+      (keyCode < keyCodes.DIGIT_0 && keyCode > keyCodes.DIGIT_9) ||
+      (keyCode < 97 && keyCode > 105)
+    ) {
       event.preventDefault();
 
       return;

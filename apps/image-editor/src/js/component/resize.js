@@ -20,21 +20,6 @@ class Resize extends Component {
     this._dimensions = null;
 
     /**
-     * ppp
-     * @type {number}
-     * @private
-     */
-    this._ppp = 270;
-
-    /**
-     * ppp calc
-     * @type {number}
-     * @private
-     */
-    // eslint-disable-next-line camelcase
-    this._ppp_calc = 0.393701;
-
-    /**
      * Original dimensions
      * @type {Object}
      * @private
@@ -106,30 +91,13 @@ class Resize extends Component {
    */
   start() {
     const dimensions = this.getCurrentDimensions();
-    dimensions.width = dimensions.width / 118;
-    dimensions.height = dimensions.height / 118;
-    // eslint-disable-next-line no-console
-    console.log(`onStart()${JSON.stringify(dimensions)}`);
     this.setOriginalDimensions(dimensions);
   }
 
   /**
    * End resizing
    */
-  end() {
-    const dimensions = this.getCurrentDimensions();
-    if (dimensions.width < 200) {
-      dimensions.width = dimensions.width * 118;
-    }
-    if (dimensions.height < 200) {
-      dimensions.height = dimensions.height * 118;
-    }
-    // dimensions.width = dimensions.width * 118;
-    // dimensions.height = dimensions.height * 118;
-    // eslint-disable-next-line no-console
-    console.log(`onEnd()${JSON.stringify(dimensions)}`);
-    this.setOriginalDimensions(dimensions);
-  }
+  end() {}
 }
 
 export default Resize;

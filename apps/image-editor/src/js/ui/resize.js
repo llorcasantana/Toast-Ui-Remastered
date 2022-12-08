@@ -178,10 +178,10 @@ class Resize extends Submenu {
    * @private
    */
   _changeWidthRangeHandler(value) {
-    this.actions.preview('width', toInteger(value * 118), this._lockState);
+    this.actions.preview('width', toInteger(value * 30), this._lockState);
     const dimensions = this.actions.getCurrentDimensions();
     if (dimensions.height < 200) {
-      dimensions.height = dimensions.height * 118;
+      dimensions.height = dimensions.height * 30;
     }
     // eslint-disable-next-line no-console
     console.log(this.actions.getCurrentDimensions());
@@ -193,10 +193,10 @@ class Resize extends Submenu {
    * @private
    */
   _changeHeightRangeHandler(value) {
-    this.actions.preview('height', toInteger(value * 118), this._lockState);
+    this.actions.preview('height', toInteger(value * 30), this._lockState);
     const dimensions = this.actions.getCurrentDimensions();
     if (dimensions.width < 200) {
-      dimensions.width = dimensions.width * 118;
+      dimensions.width = dimensions.width * 30;
     }
   }
 
