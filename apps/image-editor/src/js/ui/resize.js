@@ -60,9 +60,11 @@ class Resize extends Submenu {
     const dimensions = this.actions.getCurrentDimensions();
 
     this._originalDimensions = dimensions;
+    console.log(`dot:${dimensions.width}`);
 
-    this.setWidthValue(dimensions.width);
-    this.setHeightValue(dimensions.height);
+    // this.setWidthValue(dimensions.width);
+    this.setWidthValue(dimensions.width > 200 ? dimensions.width / 30 : dimensions.width);
+    this.setHeightValue(dimensions.height > 200 ? dimensions.height / 30 : dimensions.height);
   }
 
   /**
